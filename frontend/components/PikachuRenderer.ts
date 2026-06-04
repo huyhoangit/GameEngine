@@ -130,7 +130,9 @@ export class PikachuRenderer {
     this.pikachuGame = new PikachuGame();
     await this.pikachuGame.init();
 
-    this.config = this.pikachuGame.getConfig ? await (this.pikachuGame as any).getConfig(configName) : null;
+    this.config = (this.pikachuGame as any).getConfig
+  ? await (this.pikachuGame as any).getConfig(configName)
+  : null;
     if (this.config) {
       this.tileSize = this.config.ui.tileSize;
       const scene = this.game.scene.scenes[0];
