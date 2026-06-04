@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"app\\\\games\\\\[gameId]\\\\page.tsx -> @/components/PikachuGame\":{\"id\":\"app\\\\games\\\\[gameId]\\\\page.tsx -> @/components/PikachuGame\",\"files\":[\"static/chunks/_app-pages-browser_components_PikachuGame_tsx.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"
