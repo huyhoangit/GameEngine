@@ -1,0 +1,24 @@
+{
+  "game": {
+    "id": "pikachu",
+    "name": "Pikachu - Hard Mode",
+    "version": "1.0.0",
+    "description": "Pikachu hard difficulty"
+  },
+  "board": {
+    "width": 30,
+    "height": 20,
+    "tileTypes": 100,
+    "initialShuffleCount": 999
+  },
+  "gameplay": {
+    "maxConnectDistance": 3,
+    "maxTurns": 2,
+    "timeLimit": 60,
+    "shuffleLimit": 3
+  },
+  "ui": {
+    "tileSize": 25,
+    "animationDuration": 200
+  }
+}

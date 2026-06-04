@@ -1,0 +1,14 @@
+{
+  "name": "@game-portal/pikachu",
+  "version": "1.0.0",
+  "description": "Pikachu - Classic matching game",
+  "type": "module",
+  "main": "scripts/PikachuGame.ts",
+  "dependencies": {
+    "phaser": "^3.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

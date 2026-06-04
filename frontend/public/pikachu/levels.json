@@ -1,0 +1,38 @@
+{
+  "comment": "Chỉnh file này để quản lý màn & cơ chế (đồng bộ với games/pikachu/config/levels.json).",
+  "defaults": {
+    "boardWidth": 14,
+    "boardHeight": 10,
+    "tileTypes": 24,
+    "timeLimit": 120,
+    "shuffleLimit": 5
+  },
+  "levelOverrides": [
+    { "level": 1, "boardWidth": 8, "boardHeight": 6, "tileTypes": 6, "timeLimit": 200, "shuffleLimit": 8 },
+    { "level": 2, "boardWidth": 10, "boardHeight": 7, "tileTypes": 8, "timeLimit": 180, "shuffleLimit": 7 },
+    { "level": 3, "boardWidth": 12, "boardHeight": 8, "tileTypes": 12, "timeLimit": 150, "shuffleLimit": 6 }
+  ],
+  "mechanics": {
+    "gravityBottom": {
+      "label": "Trọng lực xuống",
+      "levels": [1, 2]
+    },
+    "gravityLeft": {
+      "label": "Trọng lực trái",
+      "levels": [6, 7]
+    },
+    "gravityRight": {
+      "label": "Trọng lực phải",
+      "levels": [8, 9]
+    },
+    "gravityTop": {
+      "label": "Trọng lực lên",
+      "levels": [10, 11]
+    },
+    "periodicShuffle": {
+      "label": "Xáo trộn định kỳ",
+      "levels": [2, 13, 14, 15],
+      "intervalSeconds": 5
+    }
+  }
+}

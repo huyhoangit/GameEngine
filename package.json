@@ -1,0 +1,32 @@
+{
+  "name": "game-portal-framework",
+  "version": "1.0.0",
+  "description": "Game Portal Framework - Modular game platform with React, Next.js, Node.js, and Phaser 3",
+  "author": "Your Name",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend",
+      "games/*"
+    ]
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @game-portal/frontend\" \"npm run dev -w @game-portal/backend\" --names frontend,backend",
+    "build": "npm run build -w @game-portal/frontend && npm run build -w @game-portal/backend",
+    "start": "npm start -w @game-portal/backend",
+    "test": "npm run test -w @game-portal/frontend && npm run test -w @game-portal/backend",
+    "clean": "npx --yes rimraf node_modules frontend/node_modules backend/node_modules games/*/node_modules",
+    "setup": "npm install && npm install -w @game-portal/frontend && npm install -w @game-portal/backend && npm install -w @game-portal/pikachu"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
