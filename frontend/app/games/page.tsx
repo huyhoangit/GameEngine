@@ -38,7 +38,7 @@ export default function GamesPage() {
         <Link href="/" style={{ color: 'white', textDecoration: 'none' }}>
           ← Back to Home
         </Link>
-        <h1 style={{ fontSize: '40px', marginTop: '20px' }}>🎮 Available Games</h1>
+        <h1 style={{ fontSize: '40px', marginTop: '20px' }}>Available Games</h1>
       </div>
 
       <div className="grid">
@@ -46,12 +46,12 @@ export default function GamesPage() {
           <Link key={game.id} href={`/games/${game.id}`} style={{ textDecoration: 'none' }}>
             <div className="card">
               <h2>{game.name}</h2>
-              <p>{game.description}</p>
+              {/* <p>{game.description}</p> */}
               <p style={{ fontSize: '12px', color: '#999', marginTop: '10px' }}>
                 v{game.version}
               </p>
               <button className="btn btn-primary" style={{ marginTop: '15px' }}>
-                Play →
+                Play
               </button>
             </div>
           </Link>

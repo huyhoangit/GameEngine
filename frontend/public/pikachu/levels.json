@@ -15,23 +15,23 @@
   "mechanics": {
     "gravityBottom": {
       "label": "Trọng lực xuống",
-      "levels": [1, 2]
+      "levels": [4, 9]
     },
     "gravityLeft": {
       "label": "Trọng lực trái",
-      "levels": [6, 7]
+      "levels": [5, 10]
     },
     "gravityRight": {
       "label": "Trọng lực phải",
-      "levels": [8, 9]
+      "levels": [6, 11]
     },
     "gravityTop": {
       "label": "Trọng lực lên",
-      "levels": [10, 11]
+      "levels": [7, 12]
     },
     "periodicShuffle": {
       "label": "Xáo trộn định kỳ",
-      "levels": [2, 13, 14, 15],
+      "levels": [8, 9, 10, 11, 12],
       "intervalSeconds": 5
     }
   }

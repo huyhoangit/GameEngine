@@ -199,7 +199,7 @@ export class PikachuScene extends Phaser.Scene {
       .setOrigin(0.5);
 
     const pauseBtn = this.add
-      .text(50, 32, '⏸', {
+      .text(50, 22, '⏸', {
         fontSize: '22px',
         color: '#fff',
         backgroundColor: '#444466',
