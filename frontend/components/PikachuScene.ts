@@ -815,7 +815,29 @@ export class PikachuScene extends Phaser.Scene {
       })
       .setOrigin(0.5);
 
-    container.add([dim, panel, title, hint]);
+      const resumeBtn = this.add
+    .text(w / 2, h / 2 + 45, '▶ Tiếp tục', {
+      fontSize: '18px',
+      color: '#ffffff',
+      backgroundColor: '#28a745',
+      padding: { x: 14, y: 8 },
+    })
+    .setOrigin(0.5)
+    .setInteractive({ useHandCursor: true });
+
+  resumeBtn.on('pointerdown', () => {
+    this.togglePause(); // hoặc logic resume của bạn
+  });
+
+  resumeBtn.on('pointerover', () => {
+    resumeBtn.setScale(1.05);
+  });
+
+  resumeBtn.on('pointerout', () => {
+    resumeBtn.setScale(1);
+  });
+
+    container.add([dim, panel, title, hint, resumeBtn]);
     this.pausePanel = container;
   }
 
