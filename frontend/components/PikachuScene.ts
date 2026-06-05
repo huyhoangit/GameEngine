@@ -191,7 +191,7 @@ export class PikachuScene extends Phaser.Scene {
     this.add.rectangle(width / 2, height / 2, width, height, 0x1a1a2e);
 
     this.add
-      .text(width / 2, 30, '🎮 Pikachu', {
+      .text(width / 2, 30, 'Pikachu', {
         fontSize: '32px',
         color: '#fff',
         align: 'center',
@@ -672,7 +672,7 @@ export class PikachuScene extends Phaser.Scene {
   private shuffle() {
     if (!this.isGameActive() || this.inputLocked) return;
     if (this.shuffleCount <= 0) {
-      this.setMessage('❌ Hết lượt xáo trộn!');
+      this.setMessage('Hết lượt xáo trộn!');
       return;
     }
 
