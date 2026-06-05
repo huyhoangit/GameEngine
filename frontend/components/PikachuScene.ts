@@ -139,6 +139,40 @@ export class PikachuScene extends Phaser.Scene {
 
   private applyLevelSettings() {
     const lc = this.pikachuGame.getLevelConfig();
+
+    const horizontalPadding = 20;
+    const topUIHeight = 150;
+    const bottomUIHeight = 60;
+    const availableWidth =
+    this.scale.width - horizontalPadding * 2;
+
+    const availableHeight =
+      this.scale.height -
+      topUIHeight -
+      bottomUIHeight;
+
+    const tileSizeByWidth =
+      Math.floor(availableWidth / lc.boardWidth);
+
+    const tileSizeByHeight =
+      Math.floor(availableHeight / lc.boardHeight);
+
+    this.tileSize = Math.min(
+      tileSizeByWidth,
+      tileSizeByHeight
+    );
+
+    this.tileSize = Math.min(
+      tileSizeByWidth,
+      tileSizeByHeight
+    );
+    
+    this.tileSize = Phaser.Math.Clamp(
+      this.tileSize,
+      16, // tối thiểu
+      48  // tối đa
+    );
+
     this.currentLevel = lc.level;
     this.timeRemaining = lc.timeLimit;
     this.maxTime = lc.timeLimit;
