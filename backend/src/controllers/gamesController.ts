@@ -71,13 +71,13 @@ export const getGameConfig = (req: Request, res: Response) => {
   if (gameId === 'pikachu') {
     if (configName === 'hard') {
       return res.json({
-        board: { width: 30, height: 20, tileTypes: 100 },
-        gameplay: { timeLimit: 60, shuffleLimit: 3 },
+        board: { width: 15, height: 15, tileTypes: 100 },
+        gameplay: { timeLimit: 90, shuffleLimit: 3 },
       });
     }
     return res.json({
-      board: { width: 14, height: 10, tileTypes: 24 },
-      gameplay: { timeLimit: 120, shuffleLimit: 5 },
+      board: { width: 10, height: 10, tileTypes: 24 },
+      gameplay: { timeLimit: 150, shuffleLimit: 5 },                                                                                 
     });
   }
 
